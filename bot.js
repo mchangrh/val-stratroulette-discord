@@ -1,6 +1,5 @@
 // imports
 require('dotenv').config()
-require('enve')
 const Discord = require('discord.js')
 const strats = require('./strats.json') // strings
 

@@ -11,14 +11,13 @@
     "url": "git+https://github.com/mchangrh/val-stratroulette.git"
   },
   "author": "Michael Chang <michael@mchang.name> (https://mchang.name)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mchangrh/val-stratroulette/issues"
   },
   "homepage": "https://github.com/mchangrh/val-stratroulette#readme",
   "dependencies": {
     "discord.js": "^12.5.1",
-    "dotenv": "^8.2.0",
-    "enve": "^1.0.4"
+    "dotenv": "^8.2.0"
   }
 }
