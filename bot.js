@@ -12,11 +12,11 @@ const client = new Discord.Client() // create client
 client.on('ready', () => {
   console.log('Ready')
   client.user.setPresence({ // set presence
-    activity: { type: process.enve.ACT_TYPE, name: process.enve.ACT_NAME },
-    status: process.enve.STATUS
+    activity: { type: process.env.ACT_TYPE, name: process.env.ACT_NAME },
+    status: process.env.STATUS
   })
 })
-client.login(process.enve.TOKEN) // login
+client.login(process.env.TOKEN) // login
 
 client.on('message', message => {
   const prefix = process.enve.PREFIX // set prefix
@@ -40,7 +40,7 @@ client.on('message', message => {
     } else if (command === 'strat') { // get new strat
         response = {embed: generateStrat()}
     } else if (command === 'help') { //
-        response = 'commands: map/side/strat'
+        response = 'commands: map/side/strat/clean'
     } else { response = {embed: generateStrat()}
     }
     message.channel.send(response)
