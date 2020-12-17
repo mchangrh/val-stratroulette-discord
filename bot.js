@@ -33,7 +33,7 @@ client.on('message', message => {
       }
     } else if (command === 'side') { // atk or def
         if (valSides.includes(args[0])) {
-            side = arg[0]
+            side = args[0]
             response = `Side set to ${side}`
         } else { response = "Invalid Side"
         }
